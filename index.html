@@ -1,201 +1,456 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-base="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>저작권문화 2026년 3월호</title>
+
+    <!-- ── Primary SEO ── -->
+    <title>저작권 문화 2026년 2+3월호 (vol.366) | 한국저작권위원회</title>
+    <meta
+      name="description"
+      content="한국저작권위원회가 발행하는 웹진 '저작권 문화' 2026년 2+3월호(vol.366). 창작자와 이용자를 위한 저작권 이슈, 인터뷰, 정책 소식을 담았습니다."
+    />
+    <meta
+      name="keywords"
+      content="저작권문화, 한국저작권위원회, 웹진, 저작권, 2026년, vol.366, 창작자, 저작권정책"
+    />
+    <meta name="author" content="한국저작권위원회" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://webzine.copyright.or.kr/" />
+
+    <!-- ── Open Graph (SNS 공유) ── -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="저작권 문화" />
+    <meta property="og:title" content="저작권 문화 2026년 2+3월호 (vol.366)" />
+    <meta
+      property="og:description"
+      content="한국저작권위원회 웹진 '저작권 문화' 2026년 2+3월호. 창작자와 이용자를 위한 저작권 이슈와 정책 소식."
+    />
+    <meta property="og:url" content="https://webzine.copyright.or.kr/" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="article:published_time" content="2026-02-01" />
+    <meta property="article:publisher" content="https://www.copyright.or.kr/" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="저작권 문화 2026년 2+3월호 (vol.366)" />
+    <meta
+      name="twitter:description"
+      content="한국저작권위원회 웹진 '저작권 문화' 2026년 2+3월호. 창작자와 이용자를 위한 저작권 이슈와 정책 소식."
+    />
+
+    <!-- ── 구조화 데이터 (JSON-LD) ── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "PublicationIssue",
+        "name": "저작권 문화 2026년 2+3월호",
+        "issueNumber": "366",
+        "datePublished": "2026-02-01",
+        "inLanguage": "ko",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "저작권 문화",
+          "publisher": {
+            "@type": "Organization",
+            "name": "한국저작권위원회",
+            "url": "https://www.copyright.or.kr/"
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
   </head>
   <body>
-    <section>
-      <header>
-        <div id="main-banner"></div>
-      </header>
-      <main>
-        <section id="issue1" class="article-list-container">
-          <div class="section-wrap" style="padding-top: 40px">
-            <div class="card-grid-3">
-              <article class="card card-overlay">
-                <div class="img-ph card-img"></div>
-                <span class="card-category">Issue · 저작권 현장</span>
-                <h3 class="card-title">
-                  AI 생성물의 저작권, 누구의 것인가—창작자와 기술 사이에서
-                </h3>
-              </article>
+    <!-- ===== HEADER ===== -->
+    <div id="site-header"></div>
 
-              <article class="card card-overlay">
-                <div class="img-ph card-img"></div>
-                <span class="card-category">Issue · 판례 분석</span>
-                <h3 class="card-title">
-                  웹툰 작가의 권리, 플랫폼 계약서에서 어떻게 보호되는가
-                </h3>
-              </article>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="hero-sub">우리가 만드는</p>
+          <h1 class="hero-title">저작권 문화</h1>
+          <p class="hero-vol">2026년 2+3월호 | vol.366</p>
+          <blockquote class="hero-quote">
+            바라는 물건도, 자기를 잡고도<br />
+            결국 훈련가에 도달한 십니다.<br />
+            그 진심이 달라지 않기에, 때 창작은 계속됩니다.
+          </blockquote>
+          <p class="hero-author">- 배우 박보검</p>
+        </div>
+        <div class="hero-right">
+          <div class="img-ph hero-img-ph"></div>
+        </div>
+      </div>
+      <div class="hero-deco-c">C</div>
+      <button class="hero-scroll-btn" aria-label="다음 섹션으로 스크롤">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </section>
 
-              <article class="card card-overlay">
-                <div class="img-ph card-img"></div>
-                <span class="card-category">Issue · 정책 동향</span>
-                <h3 class="card-title">
-                  공정이용(Fair Use)의 경계, 교육 현장에서 마주하는 현실
-                </h3>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section id="issue2" class="article-list-container">
-          <div class="card-grid-3">
-            <article class="card">
-              <div class="img-ph card-img" style="background: #b8ccb4"></div>
-              <span class="card-category">Global · 유럽</span>
-              <h3 class="card-title">
-                EU AI법과 저작권—유럽이 그리는 새로운 창작 경제
-              </h3>
-              <p class="card-desc">
-                유럽연합의 AI 규제 법안이 본격 시행되면서 AI 학습 데이터와
-                저작권의 관계가 새롭게 정립되고 있다. 창작자들에게 어떤 변화가
-                올까.
-              </p>
-              <span class="card-meta">2026.01.28</span>
-            </article>
-
-            <article class="card">
-              <div class="img-ph card-img" style="background: #b8ccb4"></div>
-              <span class="card-category">Global · 미국</span>
-              <h3 class="card-title">
-                할리우드 작가 파업 이후, 미국의 AI 창작물 저작권 논의
-              </h3>
-              <p class="card-desc">
-                미국 작가조합(WGA) 파업을 계기로 AI와 창작자의 공존 문제가 수면
-                위로 올랐다. 현재 미국 저작권청이 내리고 있는 결정들을 분석한다.
-              </p>
-              <span class="card-meta">2026.01.22</span>
-            </article>
-
-            <article class="card">
-              <div class="img-ph card-img" style="background: #b8ccb4"></div>
-              <span class="card-category">Global · 아시아</span>
-              <h3 class="card-title">
-                K-콘텐츠의 세계화, 해외 저작권 침해 대응 전략
-              </h3>
-              <p class="card-desc">
-                한국 드라마와 음악이 글로벌 플랫폼에서 소비되면서 해외 저작권
-                침해 사례도 급증하고 있다. 한국저작권위원회의 대응 현황과 과제를
-                짚어본다.
-              </p>
-              <span class="card-meta">2026.01.18</span>
-            </article>
-          </div>
-        </section>
-        <section id="issue3" class="article-list-container">
-          <div class="featured-card">
-            <div class="img-ph featured-img"></div>
-            <div class="featured-content">
-              <span class="featured-tag">변호공감</span>
-              <h2 class="featured-title">
-                스크린과 원고지 사이,<br />타인의 삶을 짓고 자신의 문장을<br />찾아가는
-                박전민의 창작 철학
-              </h2>
-              <p class="featured-desc">
-                드라마 작가로 살아가는 것은 매일 누군가의 인생을 빌려 쓰는
-                일이다. 인물의 목소리를 빌리고, 그들의 감정을 빌리고, 때론
-                현실에서 마주친 사람의 삶까지 소재로 삼는다. 그 경계 어딘가에서
-                저작권의 문제가 생겨난다. 작가 박전민은 그 경계를 매일 걷는
-                사람이다.
-              </p>
-              <a href="#" class="featured-more">인터뷰 전문 읽기 →</a>
-            </div>
-          </div>
-
-          <!-- Sub-grid 1 -->
-          <p class="sub-sec-label">문화와 권리</p>
-          <div class="card-grid-3 sub">
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">문화 · 음악</span>
-              <h3 class="card-title">
-                샘플링과 오마주 사이, 음악 창작자의 아슬한 줄타기
-              </h3>
-              <p class="card-desc">
-                현대 음악에서 기존 곡을 차용하는 것은 창작의 일부다. 그러나 법은
-                그 경계를 어떻게 긋고 있을까.
-              </p>
-            </article>
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">문화 · 미술</span>
-              <h3 class="card-title">
-                미술관의 작품을 사진 찍어도 될까—전시 저작권의 이해
-              </h3>
-              <p class="card-desc">
-                SNS 시대, 전시회를 방문하고 작품을 촬영해 올리는 행위가 저작권
-                침해가 될 수 있다는 사실을 아는 이는 많지 않다.
-              </p>
-            </article>
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">문화 · 출판</span>
-              <h3 class="card-title">
-                책 표지 디자인도 저작권이 있다—디자이너의 권리 찾기
-              </h3>
-              <p class="card-desc">
-                출판사와 디자이너 사이의 저작권 귀속 문제는 여전히 현장에서
-                갈등을 빚고 있다. 계약서에 반드시 담아야 할 내용을 짚어본다.
-              </p>
-            </article>
-          </div>
-
-          <!-- Sub-grid 2 -->
-          <p class="sub-sec-label">일상 속 저작권</p>
-          <div class="card-grid-3 sub">
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">일상 · 소셜미디어</span>
-              <h3 class="card-title">
-                인스타그램에 올린 내 사진, 플랫폼이 무단으로 쓸 수 있을까
-              </h3>
-              <p class="card-desc">
-                소셜미디어 이용 약관에는 사진 이용에 관한 방대한 조항이 숨어
-                있다. 이용자가 반드시 알아야 할 내용들을 정리했다.
-              </p>
-            </article>
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">일상 · 교육</span>
-              <h3 class="card-title">
-                유튜브 영상으로 수업해도 될까—교사를 위한 저작권 가이드
-              </h3>
-              <p class="card-desc">
-                학교 수업에서 유튜브 영상이나 뉴스 기사를 활용할 때 어떤 기준을
-                따라야 하는지 명확하게 알려드립니다.
-              </p>
-            </article>
-            <article class="card">
-              <div class="img-ph card-img"></div>
-              <span class="card-category">일상 · Q&amp;A</span>
-              <h3 class="card-title">
-                독자가 묻고 전문가가 답하다—이달의 저작권 Q&amp;A
-              </h3>
-              <p class="card-desc">
-                독자 여러분이 보내주신 저작권 관련 질문 중 가장 많이 접수된
-                사례를 골라 전문가의 답변을 담았습니다.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="footer-inner">
-          <div class="footer-top">
-            <div class="img-ph footer-logo-ph"></div>
-            <div class="footer-info">
-              <strong>한국저작권위원회</strong><br />
-              발행처: 한국저작권위원회 | 대표전화 055-792-0000<br />
-              주소 52851 경상남도 진주시 소호로 117(충무공동) | 기획, 편집
-              홍보팀<br />
-              Copyright ⓒ KOREA COPYRIGHT COMMISION. ALL RIGHTS RESERVED
-            </div>
+    <!-- ===== SECTION 01 ===== -->
+    <section class="sec01 scroll-reveal" id="sec01">
+      <div class="sec-header-bar">
+        <div class="sec-header-text-wrap">
+          <div class="sec-title-group mb0">
+            <span class="sec-num color-white">01</span>
+            <span class="sec-title color-white">깊이있는 시선</span>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="section-wrap">
+        <div class="card-grid-2">
+          <article class="card card-overlay">
+            <a href="articles/sub1.html">
+              <div
+                class="card-img"
+                style="
+                  background-image: url(&quot;img/sub1/header.jpg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <span class="card-category">특집기획</span>
+              <h3 class="card-title">
+                생성형 인공지능 학습과 저작권,<br />균형을 잡다
+              </h3>
+            </a>
+          </article>
+          <article class="card card-overlay">
+            <a href="articles/sub2.html">
+              <div
+                class="card-img"
+                style="
+                  background-image: url(&quot;img/sub2/header.jpg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <span class="card-category">특집기획</span>
+              <h3 class="card-title">
+                놀이에서 핵심 문화로, 세계로 나아가는<br />K-게임과 저작권의
+                현주소
+              </h3>
+            </a>
+          </article>
+          <article class="card card-overlay">
+            <a href="articles/sub3.html">
+              <div
+                class="card-img"
+                style="
+                  background-image: url(&quot;img/sub3/header.jpg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <span class="card-category">저작권 초대석</span>
+              <h3 class="card-title">
+                신뢰 회복·공정한 분배 시스템 구축으로<br />'창작자가 주인인
+                협회' 만들 것
+              </h3>
+            </a>
+          </article>
+          <article class="card card-overlay">
+            <a href="articles/sub4.html">
+              <div
+                class="card-img"
+                style="
+                  background-image: url(&quot;img/sub4/header.jpg&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <span class="card-category">저작권 연구자의 시선</span>
+              <h3 class="card-title">
+                레발(Leval) 판사의<br />워홀(Warhol) 판결 해설
+              </h3>
+            </a>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- ===== SECTION 02 ===== -->
+
+    <section class="sec02 scroll-reveal">
+      <div class="sec02-inner">
+        <div class="sec02-header">
+          <div class="sec-title-group">
+            <span class="sec-num color-green">02</span>
+            <span class="sec-title color-dark">변화하는 시대</span>
+          </div>
+          <div class="sec02-controls">
+            <div class="sec02-arrows">
+              <button>&#8592;</button>
+              <button>&#8594;</button>
+            </div>
+            <span class="sec02-counter">1/4</span>
+          </div>
+        </div>
+        <div class="sec02-slider">
+          <article class="card">
+            <a href="articles/sub5.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub5/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">저작권 중계</span>
+              <h3 class="card-title">내 이름값, 973원</h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub6.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub6/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">판례 돋보기</span>
+              <h3 class="card-title">
+                교량의 건축저작물성 및<br />실질적 유사성
+              </h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub7.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub7/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">세계 속 저작권</span>
+              <h3 class="card-title">
+                미국 제9 연방항소법원, 잡지 기사와<br />영화 사이의 실질적
+                유사성을 판단
+              </h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub8.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub8/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">K-저작권</span>
+              <h3 class="card-title">
+                풍경에서 자산으로,<br />건축저작물과 라이선싱
+              </h3>
+            </a>
+          </article>
+        </div>
+        <!-- /.sec02-slider -->
+      </div>
+    </section>
+
+    <!-- ===== SECTION 03 ===== -->
+    <section
+      class="sec03 scroll-reveal"
+      style="
+        background-image: url(img/main/sec03-bg.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+      "
+    >
+      <div class="sec03-inner">
+        <div class="sec-title-group">
+          <span class="sec-num color-green">03</span>
+          <span class="sec-title color-dark">행복한 저작권 문화</span>
+        </div>
+
+        <!-- Row 1: sub9 + sub10 (2컬럼, featured 스타일) -->
+        <div class="card-grid-2 featured-row">
+          <a class="featured-half-card" href="articles/sub9.html">
+            <div
+              class="featured-full-img"
+              style="
+                background-image: url(&quot;img/sub9/header.jpg&quot;);
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="featured-full-overlay">
+                <span class="featured-tag-outline">행복공감</span>
+                <h2 class="featured-full-title">
+                  픽셀의 세계에 물성을 입히고,<br />시간을 붙잡다.
+                </h2>
+              </div>
+            </div>
+          </a>
+          <a class="featured-half-card" href="articles/sub10.html">
+            <div
+              class="featured-full-img"
+              style="
+                background-image: url(&quot;img/sub10/header.jpg&quot;);
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="featured-full-overlay">
+                <span class="featured-tag-outline">공유공감</span>
+                <h2 class="featured-full-title">
+                  공유마당 기증저작물로<br />'벅차오름'을 전하다.
+                </h2>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Row 2: sub11, sub12, sub13 -->
+        <div class="card-grid-3 sub">
+          <article class="card">
+            <a href="articles/sub11.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub11/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">저작권 톺아보기</span>
+              <h3 class="card-title">
+                시나리오 표준계약서<br />한눈에 살펴보기
+              </h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub12.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub12/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">역사 속 저작권</span>
+              <h3 class="card-title">이야기(Story) 저작권의 역사 (上)</h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub13.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub13/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">이럴 땐 어떻게?</span>
+              <h3 class="card-title">
+                저작권상담센터의 주요 상담사례를<br />OX퀴즈로 소개합니다
+              </h3>
+            </a>
+          </article>
+        </div>
+
+        <!-- Row 3: sub14, sub15, sub16 -->
+        <div class="card-grid-3 sub">
+          <article class="card">
+            <a href="articles/sub14.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub14/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">저작권 별별이야기</span>
+              <h3 class="card-title">"친정엄마" 형사 사건</h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub15.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub15/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">국립저작권 박물관</span>
+              <h3 class="card-title">
+                일상 속 저작권,<br />박물관으로 스며들다
+              </h3>
+            </a>
+          </article>
+          <article class="card">
+            <a href="articles/sub16.html">
+              <div class="card-img-wrap">
+                <div
+                  class="card-img"
+                  style="
+                    background-image: url(&quot;img/sub16/header.jpg&quot;);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                ></div>
+              </div>
+              <span class="card-tag">위원회는 지금</span>
+              <h3 class="card-title">한국저작권위원회 최신 소식</h3>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <div id="site-footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

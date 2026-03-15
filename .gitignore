@@ -1,0 +1,11 @@
+# Claude Code 관련
+CLAUDE.md
+
+# 작업 참고용 스크린샷
+screenshot-*.png
+
+# 빌드 참고용 파셜 (실제 배포 HTML에 인라인 포함됨)
+_partials/
+
+# 임시 파일
+img/test.txt
