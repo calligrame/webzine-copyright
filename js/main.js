@@ -3,11 +3,11 @@ $(document).ready(function () {
   const base = $("html").data("base") ?? "";
   const extraScript = $("html").data("script") ?? "";
 
-  const loadHeader = $.Deferred();
-  const loadFooter = $.Deferred();
+  // const loadHeader = $.Deferred();
+  // const loadFooter = $.Deferred();
 
-  $("#site-header").load(`${base}/_partials/header.html`, loadHeader.resolve);
-  $("#site-footer").load(`${base}/_partials/footer.html`, loadFooter.resolve);
+  $("#site-header").load(`${base}/_partials/header.html`);
+  $("#site-footer").load(`${base}/_partials/footer.html`);
 
   $.when(loadHeader, loadFooter).done(initUI);
 
